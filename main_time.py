@@ -17,7 +17,7 @@ checkpoint = ModelCheckpoint(file_path_best, monitor='val_acc', verbose=0, save_
 callbacks_list = [checkpoint]
 
 # Fit
-history = model.fit(train_inputs, train_time, epochs=1000, verbose=1, validation_split=0.1,
+history = model.fit(train_inputs, train_time, epochs=1000, verbose=0, validation_split=0.05,
                     callbacks=callbacks_list)
 
 # train_inputs.__len__()

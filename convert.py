@@ -8,15 +8,15 @@ import matplotlib.pyplot as plt
 
 file_name_output = "model.onnx"
 file_name_folder = "models/"
-file_name_model = "path/weights-improvement-845-0.90.hdf5"
+file_name_model = "path/weights-improvement-314-0.90.hdf5"
 s = file_name_folder + file_name_model
 
-(train_inputs, train_paths) = data_loader.load_data_inputs_paths("test/data.json")
+(train_inputs, train_paths, train_time) = data_loader.load_data("train/data.json")
 
 model: Sequential = load_model(s)
 
 # Plot generated movements
-size = train_inputs.__len__()
+size = 20
 for x in range(size):
     v = train_inputs[x]
     line = plot_model.predict(model, v)

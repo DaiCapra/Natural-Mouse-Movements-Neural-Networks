@@ -12,8 +12,11 @@ The data is formatted as [{x1, y1, t1}...{xn, yn, tn}] and make up a path of a s
 
 ### A sample of generated paths
 Start- and end points are normalized to start at origin.
+X- and Y-labels: normalized screen width/height
 ![Generated mouse movement](GeneratedMovements.png)
 
 ### A sample of generated timings
-Time mouse stays at a position before going to next position. This means that movement goes from fast to slow.
+Total time mouse stays at a position before going to next position. /
+X-label: path points
+Y-label: total milliseconds
 ![Timing](Timing.png)

@@ -1,7 +1,8 @@
 from keras import Sequential
 from keras.layers import Dense, Reshape
 
-target_path_count = 66
+target_path_count = 100
+
 
 def init_model_paths():
     model = Sequential()
